@@ -58,3 +58,41 @@ console.log(addNumbers(100, 3000)); // logs 3100 to the console
 if(addNumbers(50, 50) === 100){
   console.log('Congrats!!')
 }
+
+// This function does not return anything, we just 'do something' immediately
+// this is a named function
+function fullName(fName, lName){
+  console.log(fName + ' ' + lName);
+}
+
+fullName('Bill', 'Keller');
+
+// we can also create a function and store it in a variable
+// it's an anonymous function, stored in a variable
+var myGreatFunc = function(){
+  console.log('function stored in var');
+};
+
+myGreatFunc();
+
+// 1) Write a function that accepts an argument. Let's call the arg 'door'
+function openDoor(door){
+  console.log(door);
+  // based on the value of door, log a prize
+  if(door === 'green'){
+      console.log('you opened the green door! you win a skateboard');
+  } else if(door === 'red'){
+    console.log('you opened the red door, you win a scooter');
+  }
+}
+
+// 2) Based on the value of 'door', console.log a prize.
+openDoor('red');
+
+var foo = {
+  color: 'red'
+};
+console.log(typeof foo.color);
+
+var cartoons = ['garfield', 'heathcliff', 'snoopy'];
+console.log(cartoons.length) // log 3
